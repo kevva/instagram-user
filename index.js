@@ -18,5 +18,11 @@ module.exports = user => {
 		url: `https://instagram.com/${user}`,
 		username: res.body.user.username,
 		website: res.body.user.external_url || ''
-	}));
+	})).catch(error => {
+        if (error.statusCode == 404){
+        return "Not found!"
+        } else {
+        return "Error!"
+        }
+    });
 };
