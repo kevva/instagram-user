@@ -21,6 +21,9 @@ module.exports = user => {
 		username: res.body.user.username,
 		website: res.body.user.external_url || ''
 	})).catch(err => {
-		return err;
+		if (err.statusCode === 404) {
+			return undefined;
+		}
+		throw err;
 	});
 };
