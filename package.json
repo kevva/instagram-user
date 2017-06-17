@@ -25,14 +25,11 @@
     "username"
   ],
   "dependencies": {
-    "get-emails": "^1.0.1",
-    "got": "^6.3.0"
+    "get-emails": "^2.0.0",
+    "got": "^7.0.0"
   },
   "devDependencies": {
     "ava": "*",
     "xo": "*"
-  },
-  "xo": {
-    "esnext": true
   }
 }

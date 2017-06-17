@@ -18,7 +18,7 @@ const instagramUser = require('instagram-user');
 instagramUser('unicorns').then(user => {
 	console.log(user);
 	//=> {description: 'A wonderful description', email: 'unicorns@foo.com', ...}
-})
+});
 ```
 
 

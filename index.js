@@ -9,7 +9,7 @@ module.exports = user => {
 
 	return got(`https://instagram.com/${user}/?__a=1`, {json: true}).then(res => ({
 		description: res.body.user.biography || '',
-		email: getEmails(res.body.user.biography || '')[0] || '',
+		email: getEmails(res.body.user.biography || '').values().next().value || '',
 		followers: res.body.user.followed_by.count,
 		following: res.body.user.follows.count,
 		fullName: res.body.user.full_name || '',
