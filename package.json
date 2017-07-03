@@ -1,35 +1,35 @@
 {
-  "name": "instagram-user",
-  "version": "1.0.0",
-  "description": "Get Instagram user info",
-  "license": "MIT",
-  "repository": "kevva/instagram-user",
-  "author": {
-    "name": "Kevin Martensson",
-    "email": "kevinmartensson@gmail.com",
-    "url": "github.com/kevva"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "api",
-    "instagram",
-    "user",
-    "username"
-  ],
-  "dependencies": {
-    "get-emails": "^2.0.0",
-    "got": "^7.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "instagram-user",
+	"version": "1.0.0",
+	"description": "Get Instagram user info",
+	"license": "MIT",
+	"repository": "kevva/instagram-user",
+	"author": {
+		"name": "Kevin Martensson",
+		"email": "kevinmartensson@gmail.com",
+		"url": "github.com/kevva"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"api",
+		"instagram",
+		"user",
+		"username"
+	],
+	"dependencies": {
+		"get-emails": "^2.0.0",
+		"got": "^7.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

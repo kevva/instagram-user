@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save instagram-user
+$ npm install instagram-user
 ```
 
 
