@@ -22,8 +22,9 @@ module.exports = user => {
 		website: res.body.user.external_url || ''
 	})).catch(err => {
 		if (err.statusCode === 404) {
-			return undefined;
+			err.message = `User "${user}" not found`;
 		}
+		
 		throw err;
 	});
 };
