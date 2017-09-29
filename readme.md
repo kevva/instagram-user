@@ -26,6 +26,8 @@ instagramUser('unicorns').then(user => {
 
 ### instagramUser(username)
 
+Returns a `Promise` for an object with user information.
+
 #### username
 
 Type: `string`
@@ -35,4 +37,4 @@ Instagram username.
 
 ## License
 
-MIT © [Kevin Martensson](https://github.com/kevva)
+MIT © [Kevin Mårtensson](https://github.com/kevva)
