@@ -9,7 +9,7 @@ module.exports = async username => {
 
 	try {
 		const url = `https://instagram.com/${username}`;
-		const {body: {graphql: {user}}} = await got(`${url}/?__a=1`, {json: true});
+		const {graphql: {user}} = await got(url, {searchParams: {__a: 1}}).json();
 		const email = getEmails(user.biography).values().next().value || '';
 
 		return {
@@ -25,7 +25,7 @@ module.exports = async username => {
 			website: user.external_url
 		};
 	} catch (error) {
-		if (error.statusCode === 404) {
+		if (error.response.statusCode === 404) {
 			error.message = `User "${username}" not found`;
 		}
 
