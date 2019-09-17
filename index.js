@@ -13,12 +13,12 @@ module.exports = async username => {
 		const email = getEmails(user.biography).values().next().value || '';
 
 		return {
+			...user,
 			description: user.biography,
 			email,
 			followers: user.edge_followed_by.count,
 			following: user.edge_follow.count,
 			fullName: user.full_name,
-			id: user.id,
 			posts: user.edge_owner_to_timeline_media.count,
 			url,
 			username,
