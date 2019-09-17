@@ -15,10 +15,10 @@ $ npm install instagram-user
 ```js
 const instagramUser = require('instagram-user');
 
-instagramUser('unicorns').then(user => {
-	console.log(user);
+(async () => {
+	console.log(await instagramUser('unicorns'));
 	//=> {description: 'A wonderful description', email: 'unicorns@foo.com', ...}
-});
+})();
 ```
 
 
@@ -26,15 +26,10 @@ instagramUser('unicorns').then(user => {
 
 ### instagramUser(username)
 
-Returns a `Promise` for an object with user information.
+Returns a `Promise<Object>` with the user information.
 
 #### username
 
 Type: `string`
 
 Instagram username.
-
-
-## License
-
-MIT © [Kevin Mårtensson](https://github.com/kevva)

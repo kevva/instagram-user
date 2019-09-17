@@ -4,7 +4,7 @@ const got = require('got');
 
 module.exports = username => {
 	if (typeof username !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof username}`);
+		throw new TypeError(`Expected \`user\` to be of type \`string\` but received type \`${typeof username}\``);
 	}
 
 	return got(`https://instagram.com/${username}/?__a=1`, {json: true})

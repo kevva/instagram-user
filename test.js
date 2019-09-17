@@ -1,8 +1,9 @@
 import test from 'ava';
-import m from '.';
+import instagramUser from '.';
 
 test('get user', async t => {
-	const {description, followers, fullName, id} = await m('historyinpics');
+	const {description, followers, fullName, id} = await instagramUser('historyinpics');
+
 	t.is(typeof description, 'string');
 	t.is(typeof followers, 'number');
 	t.is(typeof fullName, 'string');
@@ -10,5 +11,5 @@ test('get user', async t => {
 });
 
 test('throw helpful message when user isn\'t found', async t => {
-	await t.throws(m('helohelohelohelo'), 'User "helohelohelohelo" not found');
+	await t.throws(instagramUser('helohelohelohelo'), 'User "helohelohelohelo" not found');
 });
