@@ -11,5 +11,5 @@ test('get user', async t => {
 });
 
 test('throw helpful message when user isn\'t found', async t => {
-	await t.throws(instagramUser('helohelohelohelo'), 'User "helohelohelohelo" not found');
+	await t.throwsAsync(instagramUser('helohelohelohelo'), 'User "helohelohelohelo" not found');
 });

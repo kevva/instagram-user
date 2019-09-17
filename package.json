@@ -10,7 +10,7 @@
 		"url": "github.com/kevva"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">=10"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -25,11 +25,11 @@
 		"username"
 	],
 	"dependencies": {
-		"get-emails": "^2.0.0",
-		"got": "^7.0.0"
+		"get-emails": "^3.0.0",
+		"got": "^9.6.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"xo": "^0.20.3"
+		"ava": "^2.4.0",
+		"xo": "^0.24.0"
 	}
 }
