@@ -4,7 +4,7 @@ const got = require('got');
 
 module.exports = async username => {
 	if (typeof username !== 'string') {
-		throw new TypeError(`Expected \`user\` to be of type \`string\` but received type \`${typeof username}\``);
+		throw new TypeError(`Expected \`username\` to be of type \`string\` but received type \`${typeof username}\``);
 	}
 
 	try {
