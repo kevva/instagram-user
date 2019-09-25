@@ -1,6 +1,6 @@
 {
 	"name": "instagram-user",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Get Instagram user info",
 	"license": "MIT",
 	"repository": "kevva/instagram-user",
